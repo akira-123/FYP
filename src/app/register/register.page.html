@@ -1,0 +1,35 @@
+<ion-header translucent="true">
+</ion-header>
+
+<ion-content fullscreen="true"><br>
+  <div class="ion-text-center">
+    <img class="img1" src="assets/trip2.png">
+  </div>
+
+    <div class="container">
+      <div class="form ion-text-center">
+        <ion-text color="primary">
+        <h2>Register</h2>
+      </ion-text>
+      <ion-item lines='none'>
+        <ion-label position="floating" placeholder="Username">Username</ion-label>
+        <ion-input type="name"  placeholder="Username" [(ngModel)]="user.name" required></ion-input >    
+      </ion-item>
+      
+        <ion-item lines='none'>
+          <ion-label position="floating" placeholder="Email">E-mail</ion-label>
+          <ion-input type="email"  placeholder="Email" [(ngModel)]="user.email" required></ion-input >    
+        </ion-item>
+
+        <ion-item lines='none'>
+          <ion-label position="floating" placeholder="Password">Password</ion-label>
+      <ion-input type="password"  placeholder="Password" [(ngModel)]="user.password" required></ion-input >
+        </ion-item>
+
+        <ion-button expand='block' (click)="register(user)">Register</ion-button>
+        <ion-text class="ion-text-center">
+          <p>Already Register? <ion-router-link href="login">Login</ion-router-link></p>
+        </ion-text>
+      </div>
+    </div>
+  </ion-content>

@@ -1,20 +1,98 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+  <ion-header>
+    <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Trip Planner</ion-title>
     </ion-toolbar>
   </ion-header>
+ 
+  <ion-text color="light">
+    <h3>Recomend Places!</h3>
+  </ion-text>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<ion-slides [options]="option" class="ion-margin-top">
+  <ion-slide>
+    <ion-card class="test">
+      <img src="assets/selangor.jpg" routerLink="/selangor">
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card class="test">
+      <img src="assets/terengganu.jpg" routerLink="/terengganu">
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card class="test">
+      <img src="assets/KL.jpg" routerLink="/kl">
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card class="test">
+      <img src="assets/sabah.jpg" routerLink="/sabah">
+    </ion-card>
+  </ion-slide>
+  </ion-slides>
+
+  <ion-text color="light">
+    <h3>Recommend the state to go!</h3>
+  </ion-text>
+
+  <ion-slides [options]="option" class="ion-margin-top">
+    <ion-slide >
+      <ion-card class="test">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Kuala_Lumpur%2C_Malaysia.svg/1920px-Flag_of_Kuala_Lumpur%2C_Malaysia.svg.png"  class="img1"/>
+        <ion-router-link href="kl">Kuala Lumpur</ion-router-link>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="test">
+        <img src="assets/terengganu.jpg" routerLink="/terengganu">
+      </ion-card>
+    </ion-slide>
+  
+    <ion-slide>
+      <ion-card class="test">
+        <img src="assets/KL.jpg" routerLink="/kl">
+      </ion-card>
+    </ion-slide>
+  
+    <ion-slide>
+      <ion-card class="test">
+        <img src="assets/sabah.jpg" routerLink="/sabah">
+      </ion-card>
+    </ion-slide>
+    
+    </ion-slides>
+
+  <ion-tabs>
+    <ion-tab-bar class="tabtest" slot="bottom">
+      <ion-tab-button [routerLink]="['/home']" tab="tab1">
+        <ion-icon name="home" color="light"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/guides']" tab="tab2">
+        <ion-icon name="compass-outline" color="light"></ion-icon>
+        <ion-label>Guides</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/searchbar']"tab="tab3">
+        <ion-icon name="search-outline" color="light"></ion-icon>
+        <ion-label>Explore</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/plan']" tab="tab4">
+        <ion-icon name="heart-outline" color="light"></ion-icon>
+        <ion-label>Plan</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+  </ion-content>
+

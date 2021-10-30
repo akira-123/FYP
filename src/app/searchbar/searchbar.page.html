@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+    <ion-title>Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content> 
+<ion-searchbar color="light" 
+[(ngModel)]="searchTerm"
+(ionChange)="setFilteredItems()">
+</ion-searchbar>
+
+
+
+  
+ <ion-card class="test1">
+    <ion-item class="test" lines='none' *ngFor="let item of items" (click)="onDirectPage(item)">
+
+     <ion-avatar>
+       <img [src]="item.image"/>
+
+     </ion-avatar>
+     <ion-label color="light">{{ item.title }}</ion-label>
+
+   </ion-item>
+  </ion-card>
+ 
+</ion-content>

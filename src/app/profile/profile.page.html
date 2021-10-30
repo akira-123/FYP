@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="tangaroa" class="ion-text-center">
+  <ion-buttons slot="start">
+  <ion-back-button></ion-back-button>
+  </ion-buttons>
+  <ion-title>Profile</ion-title>
+  </ion-toolbar>
+ </ion-header>
+ <ion-content>
+<div class="ion-padding">
+
+  <ion-form class="ion-padding">
+
+
+<h6>Your Name</h6>
+      <div class="wrap-input">
+      <ion-card-content> {{user.name}} </ion-card-content>
+      </div>
+
+<h6>Your Email</h6>
+<div class="wrap-input">
+      <ion-card-content> {{user.email}} </ion-card-content>
+      </div>
+
+<h6>Your Password</h6>
+      <div class="wrap-input">
+      <ion-card-content> {{user.password}} </ion-card-content>
+      </div>
+</ion-form>
+
+  </div>
+</ion-content>
