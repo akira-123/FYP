@@ -32,15 +32,15 @@ export class ViewPostPage implements OnInit {
 
     try {
     this.firestore
-    .collection("plan")
+    .collection("contact")
     .snapshotChanges()
     .subscribe(data => { 
       this.posts = data.map(e => {
         return {
           id: e.payload.doc.id,
-          place: e.payload.doc.data()["place"],
-          date: e.payload.doc.data()["start date"],
-          date1: e.payload.doc.data()["end date"],
+          name: e.payload.doc.data()["name"],
+          date: e.payload.doc.data()["date"],
+          date1: e.payload.doc.data()["date1"],
           message: e.payload.doc.data()["message"]
         };
       });
@@ -61,7 +61,7 @@ export class ViewPostPage implements OnInit {
   });
   (await loader).present();
 
-  await this.firestore.doc("plan/" + id).delete();
+  await this.firestore.doc("contact/" + id).delete();
 
   //dismiss loader
   (await loader).dismiss();

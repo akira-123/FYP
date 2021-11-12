@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="tangaroa" class="ion-text-center">
+  <ion-toolbar color="danger" class="ion-text-center">
   <ion-buttons slot="start">
   <ion-back-button></ion-back-button>
   </ion-buttons>
@@ -7,26 +7,34 @@
   </ion-toolbar>
  </ion-header>
  <ion-content>
-<div class="ion-padding">
 
-  <ion-form class="ion-padding">
+      <ion-grid>
+      <ion-text class="ion-text-center" color="light">
+      <h6>Your Name</h6>
+      </ion-text>
+            <ion-row>
+              <ion-col>
+                <div>{{user.name}}</div>
+              </ion-col>
+            </ion-row>
 
+            <ion-text class="ion-text-center" color="light">
+                  <h6>Your Email</h6>
+                  </ion-text>
+            <ion-row>
+              <ion-col>
+                <div>{{user.email}}</div>
+              </ion-col>
+            </ion-row>
 
-<h6>Your Name</h6>
-      <div class="wrap-input">
-      <ion-card-content> {{user.name}} </ion-card-content>
-      </div>
+            <ion-text class="ion-text-center" color="light">
+                  <h6>Your Password</h6>
+                  </ion-text>
+                  <ion-row>
+                  <ion-col>
+                   <div> {{user.password}}</div>
+                  </ion-col>
+            </ion-row>
+          </ion-grid>
 
-<h6>Your Email</h6>
-<div class="wrap-input">
-      <ion-card-content> {{user.email}} </ion-card-content>
-      </div>
-
-<h6>Your Password</h6>
-      <div class="wrap-input">
-      <ion-card-content> {{user.password}} </ion-card-content>
-      </div>
-</ion-form>
-
-  </div>
 </ion-content>

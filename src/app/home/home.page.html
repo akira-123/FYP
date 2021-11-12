@@ -9,62 +9,85 @@
   </ion-header>
  
   <ion-text color="light">
-    <h3>Recomend Places!</h3>
+    <h3>Your might like these</h3>
   </ion-text>
 
 <ion-slides [options]="option" class="ion-margin-top">
   <ion-slide>
     <ion-card class="test">
-      <img src="assets/selangor.jpg" routerLink="/selangor">
+      <img src="assets/langkawi1.jpg" routerLink="/langkawi">
+      <ion-text color="light">
+      <p>Langkawi</p>
+    </ion-text>
     </ion-card>
   </ion-slide>
 
   <ion-slide>
     <ion-card class="test">
-      <img src="assets/terengganu.jpg" routerLink="/terengganu">
+      <img src="assets/afamosa.jpg" routerLink="/afamosa">
+      <ion-text color="light">
+        <p>A'Famosa </p>
+      </ion-text>
     </ion-card>
   </ion-slide>
 
   <ion-slide>
     <ion-card class="test">
-      <img src="assets/KL.jpg" routerLink="/kl">
+      <img src="assets/klcc.jpg" routerLink="/klcc">
+      <ion-text color="light">
+        <p>Petronas Twin Towers</p>
+      </ion-text>
     </ion-card>
   </ion-slide>
 
   <ion-slide>
     <ion-card class="test">
-      <img src="assets/sabah.jpg" routerLink="/sabah">
+      <img src="assets/kinabalu.jpg" routerLink="/kinabalu">
+      <ion-text color="light">
+        <p> Mount Kinabalu</p>
+      </ion-text>  
     </ion-card>
   </ion-slide>
   </ion-slides>
 
   <ion-text color="light">
-    <h3>Recommend the state to go!</h3>
+    <h3>State to visit</h3>
   </ion-text>
 
-  <ion-slides [options]="option" class="ion-margin-top">
+  <ion-slides [options]="option1" class="ion-margin-top">
     <ion-slide >
       <ion-card class="test">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Kuala_Lumpur%2C_Malaysia.svg/1920px-Flag_of_Kuala_Lumpur%2C_Malaysia.svg.png"  class="img1"/>
-        <ion-router-link href="kl">Kuala Lumpur</ion-router-link>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Kuala_Lumpur%2C_Malaysia.svg/1920px-Flag_of_Kuala_Lumpur%2C_Malaysia.svg.png" routerLink="/kl"/>
+        <ion-text color="light">
+          <p>Kuala Lumpur</p>
+        </ion-text>  
       </ion-card>
     </ion-slide>
 
     <ion-slide>
       <ion-card class="test">
-        <img src="assets/terengganu.jpg" routerLink="/terengganu">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Malacca.svg/1024px-Flag_of_Malacca.svg.png" routerLink="/melaka">
+        <ion-text color="light">
+          <p>Melaka</p>
+        </ion-text> 
       </ion-card>
     </ion-slide>
   
     <ion-slide>
       <ion-card class="test">
-        <img src="assets/KL.jpg" routerLink="/kl">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Sabah.svg/1920px-Flag_of_Sabah.svg.png" routerLink="/sabah">
+        <ion-text color="light">
+          <p>Sabah</p>
+        </ion-text>  
       </ion-card>
     </ion-slide>
   
     <ion-slide>
       <ion-card class="test">
-        <img src="assets/sabah.jpg" routerLink="/sabah">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Flag_of_Kedah.svg/1024px-Flag_of_Kedah.svg.png" routerLink="/kedah">
+        <ion-text color="light">
+          <p>Kedah</p>
+        </ion-text>  
       </ion-card>
     </ion-slide>
     
@@ -77,9 +100,9 @@
         <ion-label>Home</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button [routerLink]="['/guides']" tab="tab2">
+      <ion-tab-button [routerLink]="['/info']" tab="tab2">
         <ion-icon name="compass-outline" color="light"></ion-icon>
-        <ion-label>Guides</ion-label>
+        <ion-label>Info</ion-label>
       </ion-tab-button>
 
       <ion-tab-button [routerLink]="['/searchbar']"tab="tab3">
@@ -87,7 +110,7 @@
         <ion-label>Explore</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button [routerLink]="['/plan']" tab="tab4">
+      <ion-tab-button [routerLink]="['/contact']" tab="tab4">
         <ion-icon name="heart-outline" color="light"></ion-icon>
         <ion-label>Plan</ion-label>
       </ion-tab-button>

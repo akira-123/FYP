@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/semenanjung"></ion-back-button>
+    </ion-buttons>
+    <ion-title>South</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-text color="light">
+    <h3>Choose State</h3>
+  </ion-text>
+  <br>
+
+<ion-slides [options]="option" class="ion-margin-top">
+  <ion-slide>
+    <ion-card class="test">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Flag_of_Negeri_Sembilan.svg/1024px-Flag_of_Negeri_Sembilan.svg.png" routerLink="/nsembilan">
+      <ion-text color="light">
+      <p>Negeri Sembilan</p>
+    </ion-text>
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card class="test">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Malacca.svg/1024px-Flag_of_Malacca.svg.png" routerLink="/melaka">
+      <ion-text color="light">
+      <p>Melaka</p>
+    </ion-text>
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card class="test">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Flag_of_Johor.svg/1024px-Flag_of_Johor.svg.png" routerLink="/johor">
+      <ion-text color="light">
+      <p>Johor</p>
+    </ion-text>
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+</ion-content>

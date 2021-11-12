@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/kelantan"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Irama Beach</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-slides #sliders (ionSlidesDidLoad)='slidesDidLoad(sliders) 'pager='true' [options]='slideOpts'>
+  <ion-slide >
+    <img src="assets/irama.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/irama1.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/irama2.jpg">
+  </ion-slide>
+</ion-slides>
+</ion-content>

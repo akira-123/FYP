@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/info"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Peninsular Malaysia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-text color="light">
+    <h3>Choose area you want to know</h3>
+  </ion-text>
+  <br>
+<ion-card class="test">
+  <ion-button color="danger" expand="block" [routerLink]="['/utara']">North</ion-button>
+  <ion-button color="danger" expand="block" [routerLink]="['/timur']">East</ion-button>
+  <ion-button color="danger" expand="block" [routerLink]="['/barat']">West</ion-button>
+  <ion-button color="danger" expand="block" [routerLink]="['/selatan']"> South</ion-button>
+</ion-card>
+
+</ion-content>

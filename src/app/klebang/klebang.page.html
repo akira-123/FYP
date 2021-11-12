@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/melaka"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Klebang Beach</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-slides #sliders (ionSlidesDidLoad)='slidesDidLoad(sliders) 'pager='true' [options]='slideOpts'>
+  <ion-slide >
+    <img src="assets/klebang.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/klebang1.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/klebang2.jpg">
+  </ion-slide>
+</ion-slides>
+</ion-content>

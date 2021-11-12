@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/kl"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Aquaria KLCC </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-slides #sliders (ionSlidesDidLoad)='slidesDidLoad(sliders) 'pager='true' [options]='slideOpts'>
+  <ion-slide >
+    <img src="assets/aquaria.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/aquaria1.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/aquaria2.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/aquaria3.jpg">
+  </ion-slide>
+</ion-slides>
+
+<ion-text color="light">
+  <h2>Aquaria KLCC</h2>
+</ion-text>
+<ion-card class="test">
+  <ion-card-title color="light">Open Hours</ion-card-title>
+<ion-text color="light">
+  <p>Monday <br>
+    10.00 AM - 8.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Tuesday <br>
+  10.00 AM - 8.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Wednesday <br>
+    10.00 AM - 8.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Thursday <br>
+    10.00 AM - 8.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Friday <br>
+    10.00 AM - 8.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Saturday <br>
+    10.00 AM - 8.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Sunday <br>
+    10.00 AM - 8.00PM</p>
+</ion-text>
+</ion-card>
+
+<ion-card class="test">
+<ion-text color="light">
+<p>Price Ticket <br>
+Adult Rm41 <br>
+Children Rm31</p>
+</ion-text>
+</ion-card>
+</ion-content>

@@ -1,29 +1,34 @@
 <ion-header>
   <ion-toolbar class="ion-text-center" color="danger">
-    <ion-title>View Post</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/contact"></ion-back-button>
+    </ion-buttons>
+    <ion-title>View Note</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<ion-fab vertical="bottom" horizontol="end" slot="fixed">
-  <ion-fab-button [routerLink]="['/plan']">
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+  <ion-fab-button color="danger" [routerLink]="['/contact']">
     <ion-icon name="add"></ion-icon>
   </ion-fab-button>
 </ion-fab>
 
-  <ion-list lines="none">
+  <ion-list >
     <ion-item-sliding *ngFor="let post of posts">
-    <ion-item class="no-padding">
+    <ion-item class="test">
       <ion-label>
-          <h2>{{ post.place}}</h2>
-          <p>{{ post.date }}</p>
-          <p>{{ post.date1 }}</p>
-          <p>{{ post.message }}</p>
+        <ion-text>
+          <h2><b>Place: </b><br>{{ post.name}}</h2>
+          <p><b>Start Date:</b> <br>{{ post.date }}</p>
+          <p><b>End Date:</b> <br>{{ post.date1 }}</p>
+          <p><b>Note:</b> <br>{{ post.message }}</p>
+        </ion-text>
       </ion-label>
     </ion-item>
     
     <ion-item-options side="start">
-      <ion-item-option color="primary" [routerLink]="['/edit-post', post.id]">
+      <ion-item-option color="danger" [routerLink]="['/edit-post', post.id]">
         <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
       </ion-item-option>
     </ion-item-options>

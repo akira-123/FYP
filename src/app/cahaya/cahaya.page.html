@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/nsembilan"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pantai Cahaya Negeri</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-slides #sliders (ionSlidesDidLoad)='slidesDidLoad(sliders) 'pager='true' [options]='slideOpts'>
+  <ion-slide >
+    <img src="assets/cahaya.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/cahaya1.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/cahaya2.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/cahaya3.jpg">
+  </ion-slide>
+</ion-slides>
+</ion-content>

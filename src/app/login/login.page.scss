@@ -1,6 +1,6 @@
 
 ion-content{
-  --background: url(../../assets/bg3.gif) no-repeat center center/cover;
+  --background: url(../../assets/bg2.gif) no-repeat center center/cover;
 }
   @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
   .container{
@@ -22,6 +22,7 @@ ion-content{
   ion-button{
     --background: linear-gradient( 135deg, #cb4cf1 10%, #6610c9 100%);
     margin-top: 20px;
+    border-radius: 20px;
   }
   
   .form{

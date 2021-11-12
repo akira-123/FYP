@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  <ion-title class="ion-text-center">Planning</ion-title>
+  </ion-toolbar>
+
+ </ion-header>
+
+ <ion-content>
+  <div class="ion-padding">
+
+  <ion-text color="light">
+  <p>Planning you note here:</p>
+  </ion-text>
+
+  <ion-item>
+  <ion-label position="floating">Place to go</ion-label>
+  <ion-input type="text" [(ngModel)]="post.name" required placeholder="input your place"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Date Start</ion-label>
+    <ion-datetime displayFormat="DD MM YY" [(ngModel)]="post.date" required></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Date End</ion-label>
+    <ion-datetime displayFormat="DD MM YY" [(ngModel)]="post.date1" required></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+  <ion-label position="floating">Note</ion-label>
+  <ion-input [(ngModel)]="post.message" placeholder="type your note"></ion-input>
+ </ion-item>
+
+ <ion-button expand="block" color="danger" (click)="createPost(post)">
+ <ion-icon slot="start" name="send"></ion-icon>
+ Save
+ </ion-button>
+
+ <ion-button expand="block" color="danger" [routerLink]="['/view-post']">
+  View
+  </ion-button>
+ </div>
+</ion-content>
+

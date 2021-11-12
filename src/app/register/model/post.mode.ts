@@ -1,6 +1,7 @@
 export interface Post {
-    place: string;
+    name: string;
+    message: string;
     date: number;
     date1: number;
-    message: string;
  }
+ 

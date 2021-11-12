@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/info"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Sabah and Sarawak</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-text color="light">
+    <h3>Choose State</h3>
+  </ion-text>
+  <br>
+
+<ion-slides [options]="option" class="ion-margin-top">
+  <ion-slide>
+    <ion-card class="test">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Sabah.svg/1024px-Flag_of_Sabah.svg.png" routerLink="/sabah">
+      <ion-text color="light">
+      <p>Sabah</p>
+    </ion-text>
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card class="test">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flag_of_Sarawak.svg/1024px-Flag_of_Sarawak.svg.png" routerLink="/sarawak">
+      <ion-text color="light">
+        <p>Sarawak </p>
+      </ion-text>
+    </ion-card>
+  </ion-slide>  
+  </ion-slides>
+</ion-content>

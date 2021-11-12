@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/semenanjung"></ion-back-button>
+    </ion-buttons>
+    <ion-title>West</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-text color="light">
+    <h3>Choose State</h3>
+  </ion-text>
+  <br>
+
+<ion-slides [options]="option" class="ion-margin-top">
+  <ion-slide>
+    <ion-card class="test">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Flag_of_Selangor.svg/1024px-Flag_of_Selangor.svg.png" routerLink="/selangor">
+      <ion-text color="light">
+      <p>Selangor</p>
+    </ion-text>
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card class="test">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_the_Federal_Territories_of_Malaysia.svg/1024px-Flag_of_the_Federal_Territories_of_Malaysia.svg.png" routerLink="/kl">
+      <ion-text color="light">
+      <p>WP Kuala Lumpur</p>
+    </ion-text>
+    </ion-card>
+  </ion-slide>
+
+</ion-slides>
+</ion-content>
+

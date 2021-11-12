@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/johor"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Legoland</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-slides #sliders (ionSlidesDidLoad)='slidesDidLoad(sliders) 'pager='true' [options]='slideOpts'>
+  <ion-slide >
+    <img src="assets/legoland.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/legoland1.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/legoland2.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/legoland3.jpg">
+  </ion-slide>
+</ion-slides>
+
+<ion-text color="light">
+  <h2>Legoland</h2>
+</ion-text>
+<ion-card class="test">
+  <ion-card-title color="light">Open Hours</ion-card-title>
+<ion-text color="light">
+  <p>Monday <br>
+  10.00 AM - 6.00 PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Tuesday <br>
+    10.00 AM - 6.00 PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Wednesday <br>
+    10.00 AM - 6.00 PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Thursday <br>
+    10.00 AM - 6.00 PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Friday <br>
+    10.00 AM - 6.00 PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Saturday <br>
+    10.00 AM - 6.00 PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Sunday <br>
+    10.00 AM - 6.00 PM</p>
+</ion-text>
+</ion-card>
+<ion-card class="test">
+  <ion-text color="light">
+  <p>Price Ticket <br>
+  Adult Rm231 (Rm189 for nationalty) <br>
+  Children Rm185 (Rm149 for nationalty)</p>
+  </ion-text>
+  </ion-card>
+
+</ion-content>

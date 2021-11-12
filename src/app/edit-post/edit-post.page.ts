@@ -34,13 +34,13 @@ export class EditPostPage implements OnInit {
     });
     (await loader).present();
   
-    this.firestore.doc("plan/" + id)
+    this.firestore.doc("contact/" + id)
     .valueChanges()
     .subscribe(data => {
-      this.post.place = data["place"];
-      this.post.date = data["start date"];
-      this.post.date1 = data["end date"];
-      this.post.message = data["note"];
+      this.post.name = data["name"];
+      this.post.date = data["date"];
+      this.post.date1 = data["date1"];
+      this.post.message = data["message"];
     });
     //dismiss loader
     (await loader).dismiss();
@@ -56,7 +56,7 @@ export class EditPostPage implements OnInit {
     
         try{
          
-          await this.firestore.doc("plan/" + this.id).update(post);
+          await this.firestore.doc("contact/" + this.id).update(post);
         } catch(e){
           this.showToast(e);
         }
@@ -69,22 +69,22 @@ export class EditPostPage implements OnInit {
     }
   
     formValidation(){
-      if(!this.post.place){
-        this.showToast("Enter place");
+      if(!this.post.name){
+        this.showToast("Enter name");
         return false;
       }
+
       if(!this.post.date){
-        this.showToast("Enter start date");
+        this.showToast("Enter date");
         return false;
       }
-  
       if(!this.post.date1){
-        this.showToast("Enter end date");
+        this.showToast("Enter date1");
         return false;
       }
   
       if(!this.post.message){
-        this.showToast("Enter note");
+        this.showToast("Enter message");
         return false;
       }
   

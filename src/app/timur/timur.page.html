@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/semenanjung"></ion-back-button>
+    </ion-buttons>
+    <ion-title>East</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-text color="light">
+    <h3>Choose State</h3>
+  </ion-text>
+  <br>
+
+<ion-slides [options]="option" class="ion-margin-top">
+  <ion-slide>
+    <ion-card class="test">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Flag_of_Kelantan.svg/1024px-Flag_of_Kelantan.svg.png" routerLink="/kelantan">
+      <ion-text color="light">
+      <p>Kelantan</p>
+    </ion-text>
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card class="test">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Flag_of_Terengganu.svg/1024px-Flag_of_Terengganu.svg.png" routerLink="/terengganu">
+      <ion-text color="light">
+      <p>Terengganu</p>
+    </ion-text>
+    </ion-card>
+  </ion-slide>
+
+    <ion-slide>
+       <ion-card class="test">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Pahang.svg/1024px-Flag_of_Pahang.svg.png" routerLink="/pahang">
+         <ion-text color="light">
+         <p>Pahang</p>
+       </ion-text>
+       </ion-card>
+     </ion-slide>
+</ion-slides>
+</ion-content>
+

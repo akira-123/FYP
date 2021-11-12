@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="kuptm" class="ion-text-center">
+  <ion-toolbar color="danger" class="ion-text-center">
     <ion-title>Edit Post</ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
@@ -9,28 +9,28 @@
 
 <ion-content>
 <div class="ion-padding">
-<ion-text color="danger">
+<ion-text color="light">
   <p>Update information</p>
 </ion-text>
 
 <ion-item>
-  <ion-label position="floating">Place</ion-label>
-  <ion-input type="text"  [(ngModel)]="post.place" required></ion-input>
+  <ion-label position="floating">Place to go</ion-label>
+  <ion-input type="text"  [(ngModel)]="post.name" required></ion-input>
 </ion-item>
 
-<ion-item>
-  <ion-label>Start Date</ion-label>
-    <ion-datetime [(ngModel)]="post.date" required></ion-datetime>
+    <ion-item>
+      <ion-label>Date Start</ion-label>
+      <ion-datetime [(ngModel)]="post.date" required></ion-datetime>
     </ion-item>
 
-<ion-item>
-  <ion-label>End Date</ion-label>
-    <ion-datetime [(ngModel)]="post.date1" required></ion-datetime>
+    <ion-item>
+      <ion-label>Date End</ion-label>
+      <ion-datetime [(ngModel)]="post.date1" required></ion-datetime>
     </ion-item>
-
+    
    <ion-item>
      <ion-label position="floating">Note</ion-label>
-     <ion-textarea [(ngModel)]="post.message" placeholder="type your message"></ion-textarea>
+     <ion-textarea [(ngModel)]="post.message" placeholder="type your note"></ion-textarea>
    </ion-item>
     
    <ion-button expand="block" color="danger" (click)="updatePost(post)">
@@ -41,10 +41,3 @@
 </div>
 
 </ion-content>
-
-<ion-footer>
-<ion-toolbar class="ion-text-center" color="kuptm">
-  <ion-title>Copyright</ion-title>
-</ion-toolbar>
-</ion-footer>
-

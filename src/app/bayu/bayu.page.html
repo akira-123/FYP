@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/kelantan"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bisikan Bayu Beach </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-slides #sliders (ionSlidesDidLoad)='slidesDidLoad(sliders) 'pager='true' [options]='slideOpts'>
+  <ion-slide >
+    <img src="assets/bayu.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/bayu1.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/bayu2.jpg">
+  </ion-slide>
+</ion-slides>
+</ion-content>
+

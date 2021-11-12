@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/kl"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Petronas Twin Towers </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-slides #sliders (ionSlidesDidLoad)='slidesDidLoad(sliders) 'pager='true' [options]='slideOpts'>
+  <ion-slide >
+    <img src="assets/klcc.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/klcc1.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/klcc2.jpg">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/klcc3.jpg">
+  </ion-slide>
+</ion-slides>
+
+<ion-text color="light">
+  <h2>Petronas Twin Towers</h2>
+</ion-text>
+<ion-card class="test">
+  <ion-card-title color="light">Open Hours</ion-card-title>
+<ion-text color="light">
+  <p>Monday <br>
+  closed</p>
+</ion-text>
+<ion-text color="light">
+  <p>Tuesday <br>
+  9.00 AM - 9.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Wednesday <br>
+  9.00 AM - 9.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Thursday <br>
+  9.00 AM - 9.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Friday <br>
+  9.00 AM - 1.00PM<br>
+  2.30P M - 9.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Saturday <br>
+  9.00 AM - 9.00PM</p>
+</ion-text>
+<ion-text color="light">
+  <p>Sunday <br>
+  9.00 AM - 9.00PM</p>
+</ion-text>
+</ion-card>
+<ion-text color="light">
+<h2>About</h2>
+<p>No trip to KL would be complete without a visit to the world's tallest twin towers. The skyscrapers are utterly stunning, particularly when illuminated at night.
+   The Twin Towers Visit Operations is open Tuesday through Sunday and tickets are released at 8:30 a.m. on a first-come, first-served basis.
+    To avoid disappointment, you can purchase your ticket in advance via online ticketing or at the Ticketing Counter, Concourse Level.</p>
+</ion-text>
+</ion-content>

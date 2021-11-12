@@ -7,15 +7,12 @@ ion-title {
   font-weight: 600;
 }
 
-.test1 {
-  background: rgba(255,255,255,0);
-}
-
 .test {
   width: auto;
   height: auto;
   box-shadow: none;
   border-radius: 12px;
+  background: rgba(255,255,255,0.1);
 }
 
   img {

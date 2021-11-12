@@ -1,0 +1,19 @@
+ion-content {
+    --background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(../../assets/bg2.gif) no-repeat center center / cover;
+  }
+  
+  ion-title {
+    font-weight: 600;
+  }
+  
+  .test {
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+  }
+  .test1{
+      color: white;
+  }

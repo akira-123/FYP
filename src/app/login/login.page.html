@@ -21,10 +21,8 @@
       <ion-input type="password"  placeholder="Password" [(ngModel)]="user.password" required></ion-input >
         </ion-item>
 
-        <ion-button expand='block' (click)="login(user)">Login</ion-button>
-        <ion-text color="danger" class="ion-text-center">
-          <p>Sign up <ion-router-link href="register">here</ion-router-link></p>
-        </ion-text>
+        <ion-button  expand='block' (click)="login(user)">Login</ion-button>
+        <ion-button expand='block' [routerLink]="['/register']">Sign up here</ion-button>
       </div>
     </div>
   </ion-content>
